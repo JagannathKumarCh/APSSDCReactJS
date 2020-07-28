@@ -2,23 +2,14 @@
 APSSDC ReactJS Training Program Repository 
 
 
-# React-FDP-1
-All the discussions and examples given in the FDP can be seen here.
-
 #  Web Design Using React Js
-
-
-# Day Wise -01
-
 
 ## What is web design ?
    Creating a website or webpage either static or dynamic is known as Web design
 
-
 ## What is web development ?
    Maintaining the Website and storing the data (can also perform inserting,deleting)
    
-
 ## Software Requirement:
     
     1.Text Editor: Sublime Text3,Visual Code Editor
@@ -26,11 +17,8 @@ All the discussions and examples given in the FDP can be seen here.
     2.Git
     
     3.Node Server or Web Server For Chrome
-    
-    
 
-## Installation and Importance of Git,GitHub.
-
+## Installation and Importance of Git,GitHub.  
 
 **Git Hub**->Git Hub is an distributed Version Control System used to deploy a project and we can also contribute to others project
   Usage: Open Source and contains versions of our project
@@ -95,14 +83,9 @@ All the discussions and examples given in the FDP can be seen here.
  14. **git remote**->will check the remote(default one is origin)
  
  
- 15. **git push remotename master** ->will push the file from local folder to repository
- 
- 
- # Day Wise -02
- 
+ 15. **git push remotename master** ->will push the file from local folder to repository   
  
  * Installing Sublime Text Editor 3 : [SublimeText3 Installation Link](https://www.sublimetext.com/3)
- 
  
  ## What is Html
     Html stands for Hyper Text Markup language used to create web pages
@@ -191,10 +174,6 @@ All the discussions and examples given in the FDP can be seen here.
                   2. Internal CSS
                   
                   3. External CSS
-                  
-
-
-## Daywise-03
 
 #### Flexboxes:
                These are the advanced concepts of css grids.
@@ -212,8 +191,6 @@ All the discussions and examples given in the FDP can be seen here.
               2. we should have a child in it.
               
 #### Different types of properties and values
-
-## 21-05-2020
 ____
 
 ### Bootstrap : [Download](https://getbootstrap.com/docs/4.5/getting-started/download/)
@@ -250,8 +227,6 @@ ____
       * Large
    * xl
       * eXtra Large
-
-## 25-05-2020
 ____
 
 * Map()
@@ -276,8 +251,6 @@ ____
       * **Success || fulfilled** : Request completed successfully.
       * **Rejected** : Request rejected
       * Examples: Fetch, Cache
-
-## 27-05-2020
 ____
 * Download [nodejs](https://nodejs.org/en/) and install.
    * `node -v`
@@ -320,8 +293,6 @@ ____
 * functional componant
    * function keyword
    * stateless component
-
-## 28-05-2020
 ____
 * Composition of Components
 * Styling of the components
@@ -330,7 +301,6 @@ ____
 * Hooks in functional components
    * `useState`
 
-## 29-05-2020
 ____
 * Props (properties)
    We can pass information from one component to another.
