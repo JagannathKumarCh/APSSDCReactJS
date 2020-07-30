@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>::Day4::</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="icon" type="favicon" href="image/www.svg">
+	<meta name="viewport" content="width = device-width,initial-scale = 1"/>
+</head>
+ <body>
+ 	<section class="parent">
+		<article class="child">
+			<img class ="profile" src="image/user.svg"/>
+			<h1> Jagannath Kumar Ch </h1>
+			<h4> Designation :: Mentor in IT </h4><hr>
+			<a href="mailto:jk@rguktn.ac.in">
+				<img src="image/gmail.svg" class ="contact" />
+			</a>
+			<a href="tel:+91 8008956909"> 
+				<img src="image/phone.svg" class ="contact"/>
+			</a>
+			<a href="" target="_blank">
+				<img src="image/facebook.svg"  class ="contact"/>
+			</a>
+
+			<a href="https://github.com/BhavyaManam/webdesignfdp3.git">
+				<img src="image/github.svg"  class ="contact"/>
+			</a>
+
+		</article>
+	</section>
+</body>
+</html>
+<script>
+	var a =document.querySelector(".parent");
+	var b =document.querySelector(".child");
+	var h1 =document.querySelector("h1");
+	h1.textContent="welcome ";
+	b.append(h1);
+	a.append(b);
+
+	var hr=document.createElement("hr");
+	b.append(hr);
+
+	var mail =document.createElement("a");
+	mail.href="mailto:xyz@gmail.com";
+	var image=document.createElement("img");
+	image.src="image/gmail.svg";
+	image.style.width="50px";
+	mail.append(image);
+	b.append(mail);
+	a.append(b);
+
+	var tel=document.createElement("tel");
+	tel.href="tel:+91 8008956909";
+	var image=document.createElement("img");
+	image.src="image/phone.svg";
+	image.style.width="50px";
+	tel.append(image);
+	b.append(tel);
+	a.append(b);
+
+
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta  name="viewport" content="width = device -width ,initial - scale =1"/>
+	<title>::day9::</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		fetch('data.txt').then(response => response.text()).then(function(data){
+			//return response;
+			//console.log(response);
+			console.log(data);
+			document.querySelector('.demo').textContent=data;
+		})
+		
+	</script>
+</head>
+<body>
+	<h1>Day 9 Session on JSON</h1>
+	<h2 class="demo"> </h2>
+
+
+
+</body>
+</html>

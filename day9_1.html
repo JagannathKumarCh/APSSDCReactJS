@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta  name="viewport" content="width = device -width ,initial - scale =1"/>
+	<title>::day9::</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		fetch('image/user.svg').
+		then(response => response.blob()).
+		then(data => document.querySelector('.image1').
+			src=URL.createObjectURL(data))		
+	</script>
+</head>
+<body>
+	<h1>Using Blob</h1>
+	<img src="" class="image1"/>
+
+
+
+
+</body>
+</html>

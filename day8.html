@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>::Day8::</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="icon" type="favicon" href="image/www.svg">
+	<meta name="viewport" content="width = device-width,initial-scale = 1"/>
+</head>
+ <body>
+ 	<section class="parent">
+		<article class="child">	
+		</article>
+	</section>
+</body>
+</html>
+<script>
+	var a =document.querySelector(".parent");
+	var b =document.querySelector(".child");
+
+	var image=document.createElement("img");
+	image.src="image/user.svg";
+	image.classList.add("profile");
+	//image.style.width="50px";
+	//image.style.border="1px solid #000";
+	//image.style.borderRadius="70%""
+	//image.style.padding="1%";
+	b.append(image);
+	a.append(b);
+
+	var h1 =document.createElement("h1");
+	h1.textContent="Jagannath Kumar Ch";
+	b.append(h1);
+	a.append(b);
+
+	var h4 =document.createElement("h4");
+	h4.textContent="Designation :: Mentor in IT ";
+	b.append(h4);
+	a.append(b);
+
+	var hr=document.createElement("hr");
+	b.append(hr);
+
+	var mail =document.createElement("a");
+	mail.href="mailto:jk@rguktn.ac.in";
+	var image=document.createElement("img");
+	image.src="image/gmail.svg";
+	image.classList.add("contact");
+	//image.style.width="50px";
+	mail.append(image);
+	b.append(mail);
+	a.append(b);
+
+	var tel=document.createElement("a");
+	tel.href="tel:+91 8008956909";
+	var image=document.createElement("img");
+	image.src="image/phone.svg";
+	image.classList.add("contact");
+	//image.style.width="50px";
+	tel.append(image);
+	b.append(tel);
+	a.append(b);
+
+	var facebook=document.createElement("a");
+	facebook.href="facebook.com/jagannadhKumarch";
+	var image=document.createElement("img");
+	image.src="image/facebook.svg";
+	image.classList.add("contact");
+	//image.style.width="50px";
+	facebook.append(image);
+	b.append(facebook);
+	a.append(b);
+
+	var git=document.createElement("a");
+	git.href="https://github.com/JagannathKumarCh/ApssdcReactJs.git";
+	var image=document.createElement("img");
+	image.src="image/github.svg";
+	image.classList.add("contact");
+	//image.style.width="50px";
+	git.append(image);
+	b.append(git);
+	a.append(b);
+	
+</script>

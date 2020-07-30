@@ -1,0 +1,32 @@
+{
+	"profile": {
+		"name": "Jagannadh Kumar Ch",
+		"profile_pic": "image/user.svg",
+		"email": "jk@rguktn.ac.in",
+		"mobilenumber": 8008956909,
+		"role": "Faculty in IT "
+	},
+
+	"details": {
+		"summary": [
+			"Having knowldge on front-end technologies HTML,CSS and Bootstrap",
+			"Have practical exposure on node and mysql",
+			"Developed projects using React and Express"
+		],
+		"skillset": [{
+				"type": "Front-end Technologies",
+				"values": ["Html", "Css", "JavaScript"]
+			},
+			{
+				"type": "Backend Technologies",
+				"values": ["Node", "PHP", "Python"]
+			},
+			{
+				"type": "Databases",
+				"values": ["Oracle", "mysql", "SQLite", "Mongo"]
+			}
+		]
+	}
+
+
+}

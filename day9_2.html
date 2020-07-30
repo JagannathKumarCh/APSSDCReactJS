@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width = device -width ,initial - scale =1"/>
+	<title>::day9_JSON::</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- JS -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+</head>
+<body> 
+	<h2 class="demo" style="text-align: center;"> </h2>
+        <div class="main">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+</body>
+<script>
+	fetch('data.txt').then(response => response.text()).then(function(data){
+			
+			console.log(data);
+			document.querySelector('.demo').textContent=data;
+		})
+
+	fetch('./data.json').then(response => response.json()).then(data => profile_func(data.profile));
+	fetch('./data.json').then(response => response.json()).then(data => details_fun(data.details));
+
+		var main = document.querySelector('.main');
+		var left = document.querySelector('.left');
+		var right = document.querySelector('.right');
+
+
+		var t = function(info){
+		var t1=document.createElement("h2");
+		t1.textContent=info.data;
+		left.appendChild(t1);
+		}
+
+
+		var profile_func=function(info){
+
+			var image=document.createElement("img");
+			image.src=info.profile_pic;
+			image.classList.add("profile");
+			left.appendChild(image);
+
+			var name = document.createElement('h5');
+			name.textContent = info.name;
+			name.style.color="darkblue";
+			left.appendChild(name);			
+
+			var mail =document.createElement("a");
+			mail.href="mailto:"+info.email;
+			var image=document.createElement("img");
+			image.src="image/gmail.svg";
+			image.classList.add("contact");					
+			mail.append(image);
+			var email = document.createElement("h5");
+			email.textContent="  "+info.email;
+			email.classList.add("contact");
+			mail.append(email);
+			left.appendChild(mail);
+
+			var br = document.createElement("br");
+			left.appendChild(br);
+
+
+			var mobile =document.createElement("a");
+			mobile.href="telto:"+info.mobilenumber;
+			var image=document.createElement("img");
+			image.src="image/phone.svg";
+			image.classList.add("contact");				
+			mobile.append(image);
+			var num = document.createElement("h5");
+			num.textContent="  "+info.mobilenumber;
+			num.classList.add("contact");
+			mobile.append(num);
+			left.appendChild(mobile);
+			
+			var br = document.createElement("br");
+			left.appendChild(br);
+
+			var r =document.createElement("a");
+			r.href=""+info.role;
+			var image=document.createElement("img");
+			image.src="image/role.svg";
+			image.classList.add("contact");
+			r.append(image)	;
+			var role = document.createElement('h5');
+			role.textContent =""+info.role;
+			role.style.color="darkblue";
+			role.classList.add("contact");
+			r.append(role);
+			left.appendChild(r);
+			
+
+			}
+			var details_fun=function(info){
+				// Summary Info
+				var summary=document.createElement("h1");
+				summary.textContent="Summary";
+				var hr=document.createElement("hr");
+				right.appendChild(summary);
+				right.appendChild(hr);
+
+				var list=document.createElement("ul");
+				info.summary.map(data=>{
+					var li=document.createElement("li");
+					li.textContent=data;
+					list.appendChild(li);
+				})
+				right.appendChild(list);
+
+				// skillset info
+				var skillset=document.createElement("h1");
+				skillset.textContent="Skills";
+				var hr=document.createElement("hr");
+				right.appendChild(skillset);
+				right.appendChild(hr);
+
+				info.skillset.map( data =>{
+					var skilltype=document.createElement("h4");
+					skilltype.textContent=data.type;
+					right.appendChild(skilltype);
+
+				// Map function for values
+				data.values.map(value1=>{
+					var value=document.createElement("li");
+					value.textContent=value1;
+					value.classList.add("content");
+					right.appendChild(value)
+				})
+			})
+		}
+		main.appendChild(left);
+		main.appendChild(right);
+</script>
+</html>
